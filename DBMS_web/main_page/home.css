@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color: black;
+}
+
+.nav_bar{
+
+    background-color: #229954;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    
+}
+
+.logo span{
+    color: #ffffff;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav_btn{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+.btn_sign_up , .btn_log_in{
+    width: 6rem;
+}
+
+.main{
+    height: calc(100vh - 4rem);
+    background-image: url('/images/background2.jpg');
+    filter: blur(0.2px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-icon{
+    display: flex;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: relative;
+    top: -3rem;
+  }
+
+  .title{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+  .para{
+
+    margin: 3rem 2rem 0 2rem;
+    line-height: 1.7rem;
+    color: 	#1c6000;
+    text-align: center;
+    font-weight: 600;
+
+  }
+
+  .items{
+    margin: 2rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+    background-color: #229954;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+
+  .items:hover{
+    border-radius: 0;
+    background: none;
+    border-bottom: 1px solid black;
+  }
+
